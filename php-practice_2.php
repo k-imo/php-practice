@@ -100,7 +100,6 @@ echo $MonthAgo->modify('-1 month')->format('Y-m-d') . "\n";
 $Now = new DateTime("now");
 $Old = new DateTime("1992-04-25");
 
-$diff = $Now->diff($Old);
-echo "あの日から" . $diff->days . "日経過しました。";
+echo "あの日から" . $Now->diff($Old)->days . "日経過しました。";
 
 ?>
