@@ -14,15 +14,11 @@ echo $num/2;
 echo date("現在時刻は、Y年m月d日 h時m分s秒です。");
 
 // Q4 条件分岐-1 if文
-$device = "windows";
-if ($device == "windows"){
-    echo "使用OSは、windowsです。";
+$device = "linux";
+if ($device === "windows" || $device ==="mac" ){
+  echo "使用OSは、".$device ."です。";
 } else {
-    if ($device == "mac"){
-        echo "使用OSは、macです。";
-    } else {
-        echo "どちらでもありません。";
-    }
+  echo "どちらでもありません。";
 }
 
 // Q5 条件分岐-2 三項演算子
