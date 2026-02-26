@@ -77,11 +77,11 @@ foreach($eastGateCapital as $key => $value){
 
 
 // Q10 関数-1
-function Hello($name){
+function sayHello($name){
     echo $name."さん、こんにちは。\n";
 }
 
-Hello("金谷");
+sayHello("金谷");
 Hello("安藤");
 
 // Q11 関数-2
